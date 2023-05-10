@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>final</title>
+    <link rel="stylesheet" type="text/css" href="./Final.css">
+    <link rel="icon" type="icon" href="QAZ.png">
+  </head>
+  <body>
+    <div class="shapka">
+      <img class="img" src="Logo.png">
+      <a href="#"> <p class="shapkasozderi" > Home </p></a>
+      <a href="#"> <p class="shapkasozderi" > TV Shows </p></a>
+      <a href="#"> <p class="shapkasozderi" > Movies </p></a>
+      <a href="#"> <p class="shapkasozderi" > Recently Added </p></a>
+      <a href="#"> <p class="shapkasozderi" > My List </p></a>
+      <a href="#"> <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></a>
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="Қаш.webm" type="video/mp4">
+    </video>
+
+    <div class="content">
+     <div class="Liv">LIVING<br>WITH<br>YOURSELF</div>
+     <button id="myBtn" onclick="myFunction()">Pause</button>
+   	</div>
+   	<div class="container">
+   	    <h2 class="">My List</h2>
+   	    <div class="list1">
+   	   		  <img src="Районы.png" class="kino">
+   	   	    <img src="Тендер.png" class="kino">
+   	   	    <img src="Прокурор.png" class="kino">
+   	   	    <img src="Пацанские истории.png" class="kino">
+   	   	    <img src="Оян қазақ.png" class="kino">
+   	   	    <img src="Напарники.png" class="kino">
+   	   	    <img src="Аниматор.png" class="kino">
+   	   	    <img src="Пирамида.png" class="kino">
+   	    </div>
+   	    <h2 class="h2">Serials</h2>
+   	    <div class="list2">
+   	   	  	<img src="Няня.png" class="kino">
+   	   	  	<img src="Ақжауын.png" class="kino">
+   	   	  	<img src="Шекер.png" class="kino">
+   	   	  	<img src="Аниматор.png" class="kino">
+   	   	  	<img src="игрок.png" class="kino">
+   	   	  	<img src="Наемщики.png" class="kino">
+   	   	  	<img src="Скорая.png" class="kino">
+   	   	  	<img src="Саке 2.png" class="kino">
+   	    </div>
+   	    <h2>Comedies</h2>
+   	    <div class="list">
+   	   	  	<img src="Брат или брак.png" class="kino">
+   	   	  	<img src="Ұлы дала комедиясы.png" class="kino">
+   	   	  	<img src="Комната 209.png" class="kino">
+   	   	  	<img src="Гудбай мой бай.png" class="kino">
+   	   	  	<img src="Аппақ келін.png" class="kino">
+   	   	  	<img src="аким.png" class="kino">
+   	   	  	<img src="I go to sh.png" class="kino">
+   	   	  	<img src="Операция.png" class="kino">
+   	    </div>
+   	    <h2>Action movies</h2>
+   	    <div class="list">
+   	   	  	<img src="Районы.png" class="kino">
+   	   	  	<img src="Тараз.png" class="kino">
+   	   	  	<img src="Тендер.png" class="kino">
+   	   	  	<img src="Пацанские истории.png" class="kino">
+   	   	  	<img src="Напарники.png" class="kino">
+   	   	  	<img src="Сержан братан.png" class="kino">
+   	   	  	<img src="Игрок.png" class="kino">
+   	   	  	<img src="Острые козырки.png" class="kino">
+   	    </div>
+    </div>
+
+
+
+
+    <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
+
+      // Get the button
+      var btn = document.getElementById("myBtn");
+
+      // Pause and play the video, and change the button text
+      function myFunction(){
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        }else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>
